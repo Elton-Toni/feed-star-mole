@@ -87,9 +87,9 @@ const getNextStatus = mole => {
       mole.next = getSadInterval();
       mole.status = "leaving";
       if (mole.king) {
-        mole.node.children[0].src = "../mole/king-mole-leaving.png";
+        mole.node.children[0].src = "./mole/king-mole-leaving.png";
       } else {
-        mole.node.children[0].src = "../mole/mole-leaving.png";
+        mole.node.children[0].src = "./mole/mole-leaving.png";
       }
       break;
     case "leaving":
@@ -108,9 +108,9 @@ const getNextStatus = mole => {
       // mole.node.children[0].classList.toggle("gone", false);
       mole.node.children[0].classList.remove("gone");
       if (mole.king) {
-        mole.node.children[0].src = "../mole/king-mole-hungry.png";
+        mole.node.children[0].src = "./mole/king-mole-hungry.png";
       } else {
-        mole.node.children[0].src = "../mole/mole-hungry.png";
+        mole.node.children[0].src = "./mole/mole-hungry.png";
       }
       break;
     case "hungry":
@@ -119,9 +119,9 @@ const getNextStatus = mole => {
       mole.next = getSadInterval();
       mole.status = "sad";
       if (mole.king) {
-        mole.node.children[0].src = "../mole/king-mole-sad.png";
+        mole.node.children[0].src = "./mole/king-mole-sad.png";
       } else {
-        mole.node.children[0].src = "../mole/mole-sad.png";
+        mole.node.children[0].src = "./mole/mole-sad.png";
       }
       break;
   }
@@ -141,10 +141,10 @@ const feed = e => {
   // mole.node.children[0].classList.toggle("hungry", false);
   mole.node.children[0].classList.remove("hungry");
   if (mole.king) {
-    mole.node.children[0].src = "../mole/king-mole-fed.png";
+    mole.node.children[0].src = "./mole/king-mole-fed.png";
     score += 20;
   } else {
-    mole.node.children[0].src = "../mole/mole-fed.png";
+    mole.node.children[0].src = "./mole/mole-fed.png";
     score += 10;
   }
 

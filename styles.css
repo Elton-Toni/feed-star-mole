@@ -3,7 +3,7 @@
 }
 
 body {
-  cursor: url(../mole/cursor.png), default;
+  cursor: url(./mole/cursor.png), default;
   background-color: #c0c86d;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .bg {
-  background-image: url(../mole/background.png);
+  background-image: url(./mole/background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -79,7 +79,7 @@ body {
 }
 
 .hungry {
-  cursor: url(../mole/cursor-worm.png), pointer;
+  cursor: url(./mole/cursor-worm.png), pointer;
 }
 
 .gone {
