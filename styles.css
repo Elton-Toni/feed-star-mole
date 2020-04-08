@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  cursor: url(../mole/cursor.png), default;
+  background-color: #c0c86d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  /*max-width: max-content; */
+}
+
+.bg {
+  background-image: url(../mole/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#holes {
+  flex-basis: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2em;
+}
+
+.hole-container {
+  width: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .hole-container {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hole-container {
+    width: 50%;
+  }
+}
+
+/* #hole-0, #hole-1, #hole-3, #hole-4, #hole-2{
+  margin-bottom: -15%;
+}
+#hole-6, #hole-7, #hole-8, #hole-9, #hole-5{
+  margin-top: -15%;
+} */
+
+.hole {
+  background-color: black;
+  border-radius: 50%;
+  overflow: visible;
+  width: 55%;
+}
+
+.mole {
+  position: relative;
+  /* right: 30px; */
+  width: 100%;
+  height: 100%;
+}
+
+.hungry {
+  cursor: url(../mole/cursor-worm.png), pointer;
+}
+
+.gone {
+  visibility: hidden;
+}
+
+.win {
+  max-width: 100vw;
+  max-height: 100vh;
+  /* display: none; */
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.worm-box {
+  width: 90vw;
+  flex-basis: 100%;
+}
+
+.worm-container {
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  width: 5%;
+}
+
+.worm {
+  width: 99vw;
+  margin: 0 auto;
+  /* padding-left: 2em;
+  padding-right: 2em; */
+}
